@@ -28,6 +28,9 @@ public class AutoModifyPermissions {
                     return;
                 }
                 Path context = (Path) watchEvent.context();
+                if (!context.toFile().getName().endsWith(".js")) {
+                    return;
+                }
                 Path resolve = path.resolve(context);
                 File created = resolve.toFile();
                 if (!created.canExecute()) {
