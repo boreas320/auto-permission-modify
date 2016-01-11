@@ -6,6 +6,10 @@ Required:
     JDK 7+
 
 Usage:
+
+    git clone https://github.com/boreas320/auto-permission-modify.git
+    
+    cd auto-permission-modify/src
     
     javac AutoModifyPermissions.java
     
